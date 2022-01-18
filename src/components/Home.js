@@ -5,7 +5,7 @@ function Home() {
  
   return (
     <div>
-      <Link to="/photo">Catch a falling star and put it in your pocket</Link>
+      <Link to="/images">Catch a falling star and put it in your pocket</Link>
     </div>
   );
 }

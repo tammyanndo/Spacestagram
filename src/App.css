@@ -7,3 +7,9 @@
 .card {
   height: 350px;
 }
+
+body {
+  background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/darkrift-orig_full.jpg);
+  object-fit: cover;
+  background-size: cover
+}
