@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.css'
 import { Container, Row, Col, Card } from "react-bootstrap"
 import "../App.css"
+import { Heart } from 'react-bootstrap-icons';
 
 const apiKey = process.env.REACT_APP_NASA_KEY;
 
@@ -25,7 +26,14 @@ function Photo() {
     }
   }, []);
 
-  if (!photoData) return <div />
+  const handleClick = () => {
+    console.log('hello world')
+  }
+
+
+
+  if (!photoData) return
+  <div />
 
   return (
     <>
@@ -33,19 +41,22 @@ function Photo() {
       <Container>
         <Row>
           {photoData.map((image) => (
-              <Col md={4}>
-                <Card className="mb-3" border='secondary'>
-                  <Image className="card-img-top" src={image.url} alt={image.title} />
-                  <Card.Body>
-                    <Card.Title>{image.title}</Card.Title>
-                    <Card.Text>
-                      <p>
-                        {image.date}
-                      </p>
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
+            <Col md={4}>
+              <Card className="mb-3" border='secondary'>
+                <Image className="card-img-top" src={image.url} alt={image.title} />
+                <Card.Body>
+                  <Card.Title>{image.title}</Card.Title>
+                  <Card.Text>
+                    <p>
+                      {image.date}
+                    </p>
+                    <p>
+                      <Heart onClick={handleClick}/>
+                    </p>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
           ))}
         </Row>
       </Container>
