@@ -5,12 +5,13 @@ import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.css'
 import { Container, Row, Col, Card } from "react-bootstrap"
 import "../App.css"
-import { Heart } from 'react-bootstrap-icons';
+import { Heart, HeartFill } from 'react-bootstrap-icons';
 
 const apiKey = process.env.REACT_APP_NASA_KEY;
 
 function Photo() {
   const [photoData, setPhotoData] = useState([]);
+  const [like, setLike] = useState(true);
 
   useEffect(() => {
     fetchPhoto();
@@ -25,10 +26,6 @@ function Photo() {
       console.log(data)
     }
   }, []);
-
-  const handleClick = () => {
-    console.log('hello world')
-  }
 
 
 
@@ -50,9 +47,10 @@ function Photo() {
                     <p>
                       {image.date}
                     </p>
-                    <p>
-                      <Heart onClick={handleClick}/>
-                    </p>
+                    <div className='like-icon'>
+                      {like?<Heart /> : <HeartFill />}
+                      <Heart onClick={() => setLike(!like)} />
+                    </div>
                   </Card.Text>
                 </Card.Body>
               </Card>
