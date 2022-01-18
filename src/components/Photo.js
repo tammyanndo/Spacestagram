@@ -4,6 +4,7 @@ import Image from "./Photos"
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.css'
 import { Container, Row, Col, Card } from "react-bootstrap"
+import "../App.css"
 
 const apiKey = process.env.REACT_APP_NASA_KEY;
 
@@ -32,19 +33,19 @@ function Photo() {
       <Container>
         <Row>
           {photoData.map((image) => (
-            <Col md={4}>
-              <Card className="mb-3">
-              <Image class="card-img-top" src={image.url} alt={image.title} fluid />
-                <Card.Body>
-                  <Card.Title>{image.title}</Card.Title>
-                  <Card.Text>
-                    <p>
-                      {image.date}
-                    </p>
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
+              <Col md={4}>
+                <Card className="mb-3" border='secondary'>
+                  <Image className="card-img-top" src={image.url} alt={image.title} />
+                  <Card.Body>
+                    <Card.Title>{image.title}</Card.Title>
+                    <Card.Text>
+                      <p>
+                        {image.date}
+                      </p>
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
           ))}
         </Row>
       </Container>

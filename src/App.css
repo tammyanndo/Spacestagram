@@ -1,20 +1,9 @@
-/* .container {
-  columns: 3;
-  column-gap: 5px;
-  width: 80%;
-  margin: 2px auto;
-}
-
-.container img {
+.card img {
+  height: 250px;
   width: 100%;
-  margin: 0;
-  padding: 5px;
+  object-fit: cover;
 }
 
-.img {
-  border: 3px solid #555;
-  columns: 3;
-  column-gap: 5px;
-  width: 80%;
-  margin: 2px auto;
-} */
+.card {
+  height: 350px;
+}
