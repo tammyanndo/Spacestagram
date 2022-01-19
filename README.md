@@ -31,15 +31,9 @@ Spacestagram is a multipage application that aquires images from NASA's Astronom
 
 Install dependencies with `npm install`.
 
-To start the application, run `npm start`. Your browser should automatically open to [http://localhost:3000]. If not, you can navigate to the link manually. 
+To start the application, run `npm start`. Your browser should automatically open to [http://localhost:3000](http://localhost:3000). If not, you can navigate to the link manually. 
 
 Once on the homepage, you should be able to click on the "Spacestagram" title to be redirected to the images page. 
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
 ## Project Stack
 > React, Bootstrap, JavaScript, HTML
