@@ -16,7 +16,7 @@ function ImageCard({ image }) {
       </a>
       <Card.Body>
         <div className='like-icon' onClick={() => setLike(!like)}>
-          {like ? <Heart /> : <HeartFill />}
+          {like ? <Heart /> : <HeartFill color="#726bdd"/>}
         </div>
         <Card.Title>{image.title}</Card.Title>
         <Card.Text>
