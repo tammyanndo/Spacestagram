@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Neonderthaw&family=Oxygen&family=Rubik+Beastly&display=swap');
+
 body {
   background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/darkrift-orig_full.jpg);
   object-fit: cover;
@@ -5,12 +7,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* font-family: 'Lobster', cursive; */
+  font-family: 'Oxygen', sans-serif;
 }
-/* .App {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
 
 .card img {
   height: 200px;
@@ -27,19 +26,13 @@ body {
 }
 
 
-/* .loader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-} */
-
 .home {
   display: flex;
 }
 
 .moon-link {
   font-size: 40px;
+  /* font-family: 'Oxygen', sans-serif; */
   padding: 40px 80px;
   color: #fff;
   transition: 0.3s ease all;
@@ -50,6 +43,7 @@ body {
   display:flex;
   justify-content: center;
   font-size: 25px;
+  /* font-family: 'Oxygen', sans-serif; */
   color: #fff;
   transition: 0.3s ease all;
   text-transform: uppercase;

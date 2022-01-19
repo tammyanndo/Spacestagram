@@ -47,7 +47,7 @@ function ImageList() {
           )) : 
           <RingLoader
           className="loader"
-          color={"#544eac"}
+          color={"white"}
           size={150} 
           />
           }
