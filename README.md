@@ -1,11 +1,11 @@
 # Spacestagram
 
-Spacestagram is a multipage application that aquires images from NASA's Astronomy Picture of the Day (APOD) API, and displays each image in an individual card. Spacestagram was developed using React and Bootstrap, and uses Fetch and custom hooks to pull the images from NASA, along with the title of the image, and date it was shared. A user is also able to "like" and "unlike" an image by clicking on the heart icon just below the image. Future features for this application include keeping a record of the images liked by the user, and pushing these images to a "liked images" page. Another feature is allowing the user to select the date range of images to display, as currently, the date is predetermined and fixed). The final future feature for this Spacestagram app would be to accomodate video links on the card, as NASA occasionally posts Youtube links as the APOD.
+Spacestagram is a multipage application that acquires images from NASA's Astronomy Picture of the Day (APOD) API, and displays each image in an individual card. Spacestagram was developed using React and Bootstrap, and uses Fetch and custom hooks to pull the images from NASA, along with the title of the image, and date it was shared. A user is also able to "like" and "unlike" an image by clicking on the heart icon just below the image. Future features for this application include keeping a record of the images liked by the user, and pushing these images to a "liked images" page. Another feature is allowing the user to select the date range of images to display, as currently, the date is predetermined and fixed). The final future feature for this Spacestagram app would be to accommodate video links on the card, as NASA occasionally posts Youtube links as the APOD.
 
 ## Features
 - Minimalistic homepage features a link that directs to the images pages
-- As the image cards page loads, a loading spinner indicates that the page is loading, while the images are aquired from the NASA API
-- The simple navigation bar on the image cards page links back to the the homepage
+- As the image cards page loads, a loading spinner indicates that the page is loading, while the images are acquired from the NASA API
+- The simple navigation bar on the image cards page links back to the homepage
 - On the images page, the image cards are arranged in a grid and display the image, the title of the image, and a heart icon that the user can click on to "like" and "unlike" the image
 - When an image is "liked", the heart icon fills in and becomes purple; if the icon is clicked again, it goes back to its original state
 - Each card has a hover feature, where the text becomes purple when the mouse hovers over it
