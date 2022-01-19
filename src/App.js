@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Router>
-        <Routes>
+        <Routes className="app">
           <Route path="/" element={<Home />} />
           <Route path="/images" element={<ImageList />} />
         </Routes>
