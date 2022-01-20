@@ -10,13 +10,13 @@ function ImageCard({ image }) {
   const [like, setLike] = useState(true);
 
   return (
-    <Card className="mb-3" border='secondary'>
+    <Card className="mb-3" border="secondary">
       <a target="_blank" href={image.url}>
         <Image className="card-img-top" src={image.url} alt={image.title} />
       </a>
       <Card.Body>
-        <div className='like-icon' onClick={() => setLike(!like)}>
-          {like ? <Heart /> : <HeartFill color="#726bdd"/>}
+        <div className="like-icon" onClick={() => setLike(!like)}>
+          {like ? <Heart /> : <HeartFill color="#726bdd" />}
         </div>
         <Card.Title>{image.title}</Card.Title>
         <Card.Text>
